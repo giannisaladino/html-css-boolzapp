@@ -1,0 +1,94 @@
+/* RESET */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+menu,
+ul,
+ol {
+	list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* LAYOUT */
+
+#app {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+	padding: 0;
+    display: flex;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.sidebar {
+    background: rgb(232, 223, 223);
+    display: none;
+}
+
+.chat-menu {
+    flex-grow: 1;
+    background-color: rgb(131, 131, 142);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* utilities */
+
+.flex {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+        width: 75px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 80%;
+        height: 90%;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+
+/* DEBUG */
+ 
+.debug .container {
+    background-color: rgb(86, 86, 249);
+}
+
+.debug {
+    background-color: rgb(44, 71, 71);
+}
