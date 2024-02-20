@@ -48,18 +48,37 @@ li {
 /* STYLE */
 
 body {
-    background-color: #DBDBD4;
+    background: rgb(219,219,211);
+    background: linear-gradient(0deg, rgba(219,219,211,1) 82%, rgba(79,146,136,1) 82%);
 }
 
 .sidebar {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    display: none;
+    border-right: 1px solid lightgray;
+}
+
+/* myprofile */
+
+.myprofile {
+    background-color: #EAEAEA;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.card .card-img img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.card .card-body {
     display: none;
 }
 
-.myprofile {
-    height: 50px;
-    background-color: #EAEAEA;
-}
+/* notifications */
 
 .notifications {
     height: 65px;
@@ -67,15 +86,32 @@ body {
     display: none;
 } 
 
+/* searchbar */
+
 .search-bar {
     height: 30px;
+    display: none;
 }
+
+/* chat list */
 
 .chat-list {
     background-color: #FFFFFF;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.chat-list li {
+    padding: 7px 0;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* page content - left */
 
 .page-content {
     flex-grow: 1;
@@ -102,10 +138,13 @@ body {
     display: flex;
 }
 
+
+/* mediaq */
+
 @media (min-width: 768px) {
     .sidebar {
         display: block;
-        width: 75px;
+        width: 65px;
     }
 }
 
@@ -121,6 +160,20 @@ body {
 
     .notifications {
         display: block;
+    }
+
+    .search-bar {
+        display: block;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .card .card-body {
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
 }
 
