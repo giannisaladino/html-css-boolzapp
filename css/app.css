@@ -148,6 +148,7 @@ body {
     .sidebar {
         display: block;
         width: 65px;
+        background-color: #FFFFFF;
     }
 }
 
@@ -159,13 +160,16 @@ body {
 
     .sidebar {
         width: 250px;
+        background-color: #FFFFFF;
     }
 
     .myprofile {
+        height: 55px;
         padding: 5px 10px;
     }
 
     .notifications {
+        height: 50.25px;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -186,6 +190,7 @@ body {
     }
 
     .search-section{
+        height: 33.5px;
         display: block;
         background-color: #FAFAFA;
         padding: 5px 7px;
@@ -215,6 +220,10 @@ body {
         color: gray;
     }
 
+    /* .chat-list {
+        height: calc(701.9px - 55px - 33.5px - 50.25px);
+    } */
+
     .chat-list li .card {
         width: 100%;
         padding: 0 7px;
@@ -242,7 +251,6 @@ body {
         color: gray;
         display: flex;
         align-self: baseline;
-        flex-grow: 1;
         justify-content: flex-end;
     }
 
