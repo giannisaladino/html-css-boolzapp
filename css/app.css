@@ -81,15 +81,15 @@ body {
 /* notifications */
 
 .notifications {
-    height: 65px;
+    padding: 10px 10px;
     background-color: #A6D7F9;
     display: none;
 } 
 
 /* searchbar */
 
-.search-bar {
-    height: 30px;
+.search-section {
+
     display: none;
 }
 
@@ -155,35 +155,60 @@ body {
     }
 
     .sidebar {
-        width: 200px;
+        width: 250px;
+    }
+
+    .myprofile {
+        padding: 5px 10px;
     }
 
     .notifications {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
-    .search-bar {
+    .notifications i {
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: white;
+        color:#A6D7F9;
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .notifications p,
+    .notifications a {
+        font-size: 10px;
+    }
+
+    .search-section{
         display: block;
+        background-color: #FAFAFA;
+        padding: 5px 7px;
+    }
+
+    .search-section .search-bar {
+        padding: 5px 7px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 10px;
+        color: gray;
     }
 
     .card {
         display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .card .card-body {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 8px;
+        color: gray;
     }
 }
 
-
-/* DEBUG */
- 
-.debug .container {
-    background-color: rgb(86, 86, 249);
-}
-
-.debug {
-    background-color: rgb(44, 71, 71);
-}
