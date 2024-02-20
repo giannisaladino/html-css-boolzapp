@@ -78,6 +78,10 @@ body {
     display: none;
 }
 
+.card .time {
+    display: none;
+}
+
 /* notifications */
 
 .notifications {
@@ -89,7 +93,6 @@ body {
 /* searchbar */
 
 .search-section {
-
     display: none;
 }
 
@@ -196,19 +199,52 @@ body {
         gap: 15px;
         font-size: 10px;
         color: gray;
+        border: 1px solid rgba(222, 220, 220, 0.338);
     }
 
-    .card {
+    .myprofile .card {
         display: flex;
         width: 100%;
         justify-content: space-between;
     }
 
-    .card .card-body {
+    .myprofile .card .card-body {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 13px;
         color: gray;
     }
+
+    .chat-list li .card {
+        width: 100%;
+        padding: 0 7px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .chat-list .card .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-list .card .card-body .name {
+        font-size: 15px;
+    }
+
+    .chat-list .message {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .chat-list .time {
+        font-size: 10px;
+        color: gray;
+        display: flex;
+        align-self: baseline;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
 }
 
