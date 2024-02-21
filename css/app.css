@@ -61,6 +61,7 @@ body {
 /* myprofile */
 
 .myprofile {
+    height: 54px;
     background-color: #EAEAEA;
     padding: 10px 0;
     display: flex;
@@ -121,13 +122,53 @@ body {
     background-color: rgb(131, 131, 142);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
+/* page-header */
+
 .page-header {
-    height: 50px;
+    height: 54px;
     background-color: #EAEAEA;
+    padding: 0 15px;
 }
+
+.page-header .card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.page-header .card .card-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-header .card-img .last-access {
+    font-size: 13px;
+}
+
+.page-header .card-img .last-access .message {
+    font-size: 11px;
+    color: gray;
+    margin-top: 3px;
+}
+
+
+.page-content .page-header .icons {
+    display: none;
+}
+
+
+/* chat */
+
+.page-content .chat {
+    flex-grow: 1;
+    background-image: url(../img/mine.jpg);
+}
+
+
+/* bottom-input */
 
 .page-input {
     height: 50px;
@@ -149,6 +190,19 @@ body {
         display: block;
         width: 65px;
         background-color: #FFFFFF;
+    }
+
+    .page-content .page-header .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .page-content .page-header .icons {
+        display: flex;
+        gap: 13px;
+        color: gray;
+
     }
 }
 
