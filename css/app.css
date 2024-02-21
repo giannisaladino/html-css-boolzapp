@@ -165,8 +165,32 @@ body {
 .page-content .chat {
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
+.page-content .chat .my-msg {
+    background-color: #DEF9C0;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 15px;
+    max-width: 60%;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.page-content .chat .his-msg {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 15px;
+    max-width: 60%;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: flex-start;
+}
 
 /* bottom-input */
 
@@ -215,6 +239,7 @@ body {
     .sidebar {
         width: 250px;
         background-color: #FFFFFF;
+        flex-shrink: 0;
     }
 
     .myprofile {
